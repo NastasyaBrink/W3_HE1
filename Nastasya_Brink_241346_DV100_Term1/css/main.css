@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.topNav{
+    overflow: hidden;
+    background-color: #7ab4c7;
+}
+
+.topNav a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topNavRight {
+    float: right;
+}
+
+.topNav a:Hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topNav a.active {
+    background-color: #dfcd58;
+    color: white;
+}
+
+header img{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    opacity: 1;
+    border-radius: 12px 12px 12px 12px;
+}
+
+p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: #7ab4c7;
+    text-align: justify;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.text{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+section img{
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2em;
+    opacity: 1;
+    border-radius: 12px 12px 12px 12px;
+}
+
+.imgTextOverlay{
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+.imgTextOverlay img{
+    width: 100%;
+    height: 500px;
+}
+
+.bottomLeft{
+    position: absolute;
+    bottom: 20px;
+    left: 16px;
+}
+
+.topLeft{
+    position: absolute;
+    top: 0px;
+    left: 16px;
+}
+
+.topRight{
+    position: absolute;
+    top: 0px;
+    right: 16px;
+}
+
+.bottomRight{
+    position: absolute;
+    bottom: 20px;
+    right: 16px;
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#filter{
+    width: 300px;
+    height: 400px;
+    filter: grayscale(100%);
+    /*filter: sepia(100%);*/
+    /*filter: blur(2px);*/
+}
+
+#filter:hover{
+    filter: none;
+}
+
+.container{
+    position: relative;
+    width: 50%;
+}
+
+.image{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #dfcd58;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.image{ 
+    width: 600;
+    height: 800;
+}/* when I add this to the image it does nothing*/
+
+.overlayText{
+   color: rgb(0, 0, 0);
+   font-size: 20px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   -ms-transform: translate(-50%, -50%);
+}
+
+.button {
+    background-color: #7ab4c7; /* Same color as the navigation bar. */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  
